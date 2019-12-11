@@ -1,6 +1,7 @@
 package finalproject.mu3620.patterns;
 
 import finalproject.mu3620.random.WeatherAPI;
+import finalproject.mu3620.random.Wikipedia;
 import org.jfugue.pattern.Pattern;
 import org.jfugue.rhythm.Rhythm;
 import org.jfugue.theory.Chord;
@@ -20,7 +21,7 @@ public class Pattern1 {
 //            .addLayer("...............+");
 
     public void displayChords() {
-        Chord[] chords = cp.setKey("C").getChords();
+        Chord[] chords = cp.setKey("D").getChords();
         for (Chord chord : chords) {
             System.out.print("Chord " + chord + " has these notes: ");
             Note[] notes = chord.getNotes();
@@ -42,8 +43,9 @@ public class Pattern1 {
                // Repeat main rhythm based on getCount()
                 // $ points to the nth chord while 'V' is staccato, 'R' is rest
                .add(
-                   cp.allChordsAs("$0 $0 $0 $0 $1 $1 $2 $0")
+                   cp.allChordsAs("$0 $0 $0 $0 $1 $1 $2 $0 $1 $1 $2")
                    .eachChordAs("V0 $0s $1s $2s Rs V1 $!q")
+
                )
                .repeat(2)
                .setTempo(weatherAPI.getCount());

@@ -19,7 +19,7 @@ public class Pattern3 {
 //            .addLayer("...............+");
 
     public void displayChords() {
-        Chord[] chords = cp.setKey("C").getChords();
+        Chord[] chords = cp.setKey("A").getChords();
         for (Chord chord : chords) {
             System.out.print("Chord " + chord + " has these notes: ");
             Note[] notes = chord.getNotes();
@@ -41,7 +41,7 @@ public class Pattern3 {
               // Repeat main rhythm based on getCount()
               //.repeat(1)
               .add(
-                  cp.allChordsAs("$0 $0 $0 $0 $1 $1 $2 $0")
+                  cp.allChordsAs("$2 $0 $0 $0 $1 $1 $2 $0")
                   .eachChordAs("V0 $0s $1s $2s Rs V1 $!q")
               )
               .repeat(2)

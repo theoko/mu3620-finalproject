@@ -40,7 +40,7 @@ public class Pattern2 {
                // Repeat main rhythm based on getCount()
                //.repeat(1)
                .add(
-                   cp.allChordsAs("$0 $0 $0 $0 $1 $1 $2 $0")
+                   cp.allChordsAs("$2 $2 $0 $0 $0 $0 $1 $1 $2 $0")
                    .eachChordAs("V0 $0s $1s $2s Rs V1 $!q")
                 )
                .repeat(1)

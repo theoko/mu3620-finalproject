@@ -31,7 +31,7 @@ public class WeatherAPI {
     }
 
     private final String[] weatherLinks = new String[] {
-            "https://api.openweathermap.org/data/2.5/weather?q=Sahara&appid=0021f7b296482eecb5c71c4f138cf484",
+            "https://api.openweathermap.org/data/2.5/weather?q=San%20Francisco&appid=0021f7b296482eecb5c71c4f138cf484",
             "https://api.openweathermap.org/data/2.5/weather?q=Worcester&appid=0021f7b296482eecb5c71c4f138cf484",
             "https://api.openweathermap.org/data/2.5/weather?q=Boston&appid=0021f7b296482eecb5c71c4f138cf484"
     };
